@@ -1,0 +1,17 @@
+[
+  {
+    "name": "paraboloid",
+    "formula": "x^2 + y^2",
+    "range": [-5, 5]
+  },
+  {
+    "name": "saddle",
+    "formula": "x^2 - y^2",
+    "range": [-5, 5]
+  },
+  {
+    "name": "rosenbrock",
+    "formula": "(1-x)^2 + 100*(y-x^2)^2",
+    "range": [-2, 3]
+  }
+]

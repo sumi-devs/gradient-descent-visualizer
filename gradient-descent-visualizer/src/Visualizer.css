@@ -1,0 +1,102 @@
+.app {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f9;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #222;
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+}
+
+.control-panel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: #ffffff;
+  padding: 20px;
+  border: 1px solid #070707ee;
+  margin-bottom: 25px;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 150px;
+}
+
+.control-group label {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.control-group input,
+.control-group select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 0.9rem;
+}
+
+.button-group {
+  display: flex;
+  gap: 12px;
+  margin-top: 5px;
+}
+
+.button-group button {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+button.start {
+  background: #28a745;
+  color: white;
+}
+button.start:hover {
+  background: #218838;
+}
+
+button.pause {
+  background: #ffc107;
+  color: black;
+}
+button.pause:hover {
+  background: #e0a800;
+}
+
+button.reset {
+  background: #dc3545;
+  color: white;
+}
+button.reset:hover {
+  background: #c82333;
+}
+
+.info-box {
+  background: #eef6ff;
+  border-left: 4px solid #007bff;
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: #004085;
+  max-width: 250px;
+  margin-top: 10px;
+}
+
+.plot-container {
+  border: 1px solid #070707ee;
+}

@@ -1,0 +1,59 @@
+.home-container {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: #fafbfc;
+  min-height: 100vh;
+  padding: 60px 40px;
+  text-align: center;
+  color: #1a1a1a;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #1a1a1a;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+}
+
+.home-description {
+  max-width: 700px;
+  margin: 20px auto;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #333333;
+  position: relative;
+  z-index: 1;
+  font-weight: 400;
+  background: #f0f2f5;
+  padding: 25px 35px;
+  border-left: 4px solid #333333;
+}
+
+.home-button {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 18px 50px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: #ed2a2a;
+  color: #ffffff;
+  border: 3px solid #1a1a1a;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.home-button:hover {
+  background: #ffffff;
+  color: #1a1a1a;
+  border-color: #1a1a1a;;
+}
