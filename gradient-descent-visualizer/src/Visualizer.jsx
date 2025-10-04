@@ -13,17 +13,15 @@ function Visualizer() {
 
   const intervalRef = useRef(null);
 
-  // Fetch JSON from Node backend
   useEffect(() => {
     fetch("http://localhost:5000/api/functions")
       .then((res) => res.json())
       .then((data) => {
         setFunctions(data);
-        setLossFn(data[0]); // default to first function
+        setLossFn(data[0]);
       });
   }, []);
 
-  // Loss function evaluation
   const loss = (x, y) => {
     if (!lossFn) return 0;
     switch (lossFn.name) {
@@ -38,7 +36,6 @@ function Visualizer() {
     }
   };
 
-  // Gradient evaluation
   const gradient = (x, y) => {
     if (!lossFn) return [0, 0];
     switch (lossFn.name) {
@@ -56,7 +53,6 @@ function Visualizer() {
     }
   };
 
-  // Generate surface dynamically using JSON range
   const generateSurface = () => {
     if (!lossFn) return { x: [], y: [], z: [] };
     const [min, max] = lossFn.range;
@@ -70,7 +66,6 @@ function Visualizer() {
 
   const { x, y, z } = generateSurface();
 
-  // Click to place marker
   const handleClick = (event) => {
     if (event.points && event.points[0]) {
       const px = event.points[0].x;
@@ -79,7 +74,6 @@ function Visualizer() {
     }
   };
 
-  // Start animation
   const startAnimation = () => {
     if (running) return;
     setRunning(true);
