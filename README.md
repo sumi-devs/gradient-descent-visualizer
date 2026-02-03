@@ -3,21 +3,24 @@
 An interactive web application that **visualizes gradient descent** on different mathematical loss functions.  
 Built using **ReactJS**, **Node.js**, **Plotly.js**, and **JSON** for configuration.  
 
+![Screenshot](./images/1.png)
+![Screenshot](./images/2.png)
+
 ---
 
-## ✨ Features
+## Features
 
-- 📊 **3D Loss Surfaces** – Visualize functions like **Paraboloid, Saddle, Rosenbrock**  
-- 🎯 **Interactive Marker Placement** – Click anywhere on the graph to set the starting point  
-- ⚙️ **Customizable Parameters**:
+- **3D Loss Surfaces** – Visualize functions like **Paraboloid, Saddle, Rosenbrock**  
+- **Interactive Marker Placement** – Click anywhere on the graph to set the starting point  
+- **Customizable Parameters**:
   - Learning rate  
   - Marker size  
   - Animation speed  
-- ▶️ **Controls** – Start, Pause, and Reset gradient descent animation  
+- **Controls** – Start, Pause, and Reset gradient descent animation  
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 - **ReactJS** – UI and state management  
@@ -33,7 +36,7 @@ Built using **ReactJS**, **Node.js**, **Plotly.js**, and **JSON** for configurat
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Clone the Repository
 ```bash
@@ -68,7 +71,7 @@ Frontend runs at: **http://localhost:3000**
 - Use **Pause/Reset** to control the animation.  
 
 
-## 📖 References
+## References
 
 - [Gradient Descent – Wikipedia](https://en.wikipedia.org/wiki/Gradient_descent)  
 - [Plotly.js Documentation](https://plotly.com/javascript/)  
